@@ -1,0 +1,18 @@
+h1 {
+    background-color: black;
+    color: lightblue;
+}
+
+h2 {
+    text-align: center;
+    background-color: purple;
+    color: white;
+    font-style: italic;
+}
+
+h3 {
+    text-align: right;
+    font-family: comic sans-serif;
+    text-decoration: underline;
+    background-color: lightskyblue;
+}

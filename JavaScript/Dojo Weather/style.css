@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Nav Bar */
+header{
+    height: 50px;
+    width: auto;
+    background-color: #9fc5f8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cities{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+header h2, header .cities{
+    margin: 0px 80px;
+}
+
+/* Title */
+#title
+{
+    margin: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Select Temperature */
+.temp-option{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+
+hr{
+    border: 1px solid black;
+    margin: 0px 80px;
+}
+
+/* Weather Icons */
+#weather-icons{
+    display: flex;
+    margin: 20px 80px;
+    justify-content: space-around;
+
+}
+
+#today, #tomorrow, #friday, #saturday{
+    width: 175px;
+    height: 250px;
+    background-color: #eeeeee;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5px;
+    
+}
+
+img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.temperature{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+#high-temp{
+    color: red;
+}
+
+#low-temp{
+    color: blue;
+}
+
+/* Alert */
+
+#alert{
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #eeeeee;
+    margin: 20px 80px;
+    position: fixed;
+    bottom: 10px;
+}
+
+#alert img{
+    width: 50px;
+    height: auto;
+    padding: 20px;
+}
+
+#alert button{
+    margin: 0px 20px;
+    background-color: #9fc5f8;
+    box-shadow: 2px 2px black;
+    width: 75px;
+}

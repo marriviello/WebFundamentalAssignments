@@ -1,0 +1,273 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */ 
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+/* Live Scores */ 
+
+#live-scores{
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+#live-scores p{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Nav Bar */ 
+
+#navbar{
+    width: 900px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    width: 110px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-15deg);
+}
+
+#navbar h1{
+    margin-left: 60px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    list-style-type: none;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: flex-end;
+    width: 275px;
+}
+
+.nav-icons img{
+    width: auto;
+    height: 25px;
+    margin: 0px 10px;
+}
+
+/* Wrapper */
+#wrapper{
+    background-color: #dddddd;
+    width: 900px;
+    height: 800px;
+    display: flex;
+}
+
+/* Left Column */
+#left-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 300px;
+    height: 650px;
+    margin: 20px 20px 20px 40px;
+}
+
+/* Top Stories */
+.top-stories{
+    background-color: white;
+    padding: 10px 25px;
+    height: 250px;
+    width: 200px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+/* Customize Buttons */
+.customize-content{
+    background-color: white;
+    padding: 10px 25px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.customize-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.signin{
+    width: 70px;
+    height: 30px;
+    border: 2px solid black;
+    color: white;
+    background-color: #2b78e4;
+    box-shadow: 3px 3px black;
+}
+
+.signup{
+    width: 70px;
+    height: 30px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px black;
+}
+
+/* Subscribe */
+#subscribeBox{
+    background-color: white;
+    padding: 10px 25px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#subscribeBox button{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: #fde599;
+    box-shadow: 3px 3px black;
+    align-items: center;
+}
+
+
+/* Right Column */
+#right-col{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    align-items: center;
+    margin: 20px 40px 20px 0px;
+    background-color: white;
+    padding: 10px 25px;
+    height: 550px;
+    width: 550px;
+    border-radius: 5%;
+}
+
+
+.live{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    width: 500px;
+}
+
+/* Live Header */
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    top: 12px;
+    left: 5px;
+}
+
+.live-header{
+    color: red;
+}
+
+/* Score */
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 400px;
+}
+
+/* Ninja & Pirates Score */
+.ninjas, .pirates{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Score Styling */ 
+.ninjas img, .pirates img{
+    width: 150px;
+    height: auto;
+}
+
+.ninjas p, .pirates p{
+    color: gray;
+    font-size: 12px;
+}
+
+.ninjas h1, .pirates h1{
+    font-size: 40px;
+}
+
+.ninjas h2{
+    color: #2798a9;
+    font-size: 35px;
+}
+
+.pirates h2{
+    color: red;
+    font-size: 35px;
+}
+
+/* Versus */
+.versus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.versus p{
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Summary */
+.summary p{
+    padding: 10px 0px;
+    font-size: 14px;
+}

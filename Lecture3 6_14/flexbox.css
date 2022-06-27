@@ -1,0 +1,104 @@
+/* Zero's out CSS */
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    border-radius:15px;
+}
+
+
+.wrapper {
+    border:4px solid green;
+    background-color: green;
+    border: 2px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height: 700px;
+    padding:0px 20px;
+    margin:30px;
+
+}
+
+.side-bar,nav,.content-holder,.hero{
+    display: flex;
+}
+
+
+.nav-content,.side-bar-content,.hero-content{
+    border:4px solid blue;
+    background-color: blue;
+}
+
+nav{
+    height:70px;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:2px solid black;
+    background-color: yellow;
+
+
+}
+
+.nav-content{
+    height:40px;
+    width:70px;
+    justify-content: space-around;
+}
+
+.content-holder{
+    display:flex;
+    height:500px;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: yellow;
+    border:2px solid black;
+}
+
+
+.side-bar{
+    height:400px;
+    width:200px;
+    padding:10px;
+    border:4px solid blue;
+    background-color: blue;
+    border:2px solid black;
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content:flex-end;
+    justify-content:center;
+}
+
+.side-bar-content{
+    height:70px;
+    width:70px;
+    margin:5px;
+    border:4px solid purple;
+    background-color: purple;
+    border:2px solid black;
+}
+
+
+.hero{
+    height:400px;
+    width:500px;
+    padding:10px;
+    display:flex;
+    flex-wrap: wrap;
+    border:4px solid blue;
+    background-color: blue;
+    border:2px solid black;
+}
+
+.hero-content{
+    height:100px;
+    width:100px;
+    margin:20px;
+    border:4px solid purple;
+    background-color: purple;
+    border:2px solid black;
+}

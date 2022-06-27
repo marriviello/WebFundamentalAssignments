@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.wrapper {
+    background-color: green;
+    height: 100vh;
+}
+
+h1{
+    color: cyan;
+    display: inline-block;
+    background-color: red;
+}
+
+.nav{
+    border: 3px sold black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-color: yellow;
+    padding: 20px;
+    margin: 0px, 10px, 30px, 10px;
+}
+
+ul{
+    display: inline-block;
+    margin-left:40px;
+}
+
+ul > li {
+    display:inline-block;
+    margin:20px;
+    list-style:none;
+}

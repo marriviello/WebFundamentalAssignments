@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    font-family: "Comic Sans MS";
+    font-size: 80%;
+}
+#box {
+    width: 500px;
+    height: 275px;
+    background-color: white;
+    border: 2px solid lightgray;
+    align-self: center;
+}
+
+.header{
+    width: 500px;
+    height: 70px;
+    background-color: #2ba2b8;
+}
+
+.profile {
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: -25px;
+    justify-content: center;
+}
+
+.user {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 25px;
+    left: 30px;
+    border: 1px solid lightgray;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.location{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.editprofile{
+    display: flex;
+    color: #2ba2b8; 
+}
+.gear, .map{
+    max-height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
