@@ -41,9 +41,9 @@ else: #conditional: else
 
 for x in range(5):
     print(x)
-for x in range(2,5):
+for x in range(2,5):#for loop: start & end
     print(x)
-for x in range(2,10,3):
+for x in range(2,10,3): #for loop: increment
     print(x)
 x = 0 #while loop: start
 while(x < 5): #while loop: stop
@@ -57,24 +57,25 @@ print(person) #log statement
 person.pop('eye_color')#dictionary: delete value
 print(person)
 
-for topping in pizza_toppings:
+for topping in pizza_toppings: #for loop: sequence
     if topping == 'Pepperoni':
         continue #for loop: continue
     print('After 1st if statement')
     if topping == 'Olives':
         break #for loop: break
 
+
 def print_hello_ten_times():
     for num in range(10):
-        print('Hello')
+        print('Hello') #function: return
 
 print_hello_ten_times()
 
-def print_hello_x_times(x):
+def print_hello_x_times(x): #function: parameter
     for num in range(x):
         print('Hello')
 
-print_hello_x_times(4)
+print_hello_x_times(4) #function: argument
 
 def print_hello_x_or_ten_times(x = 10):
     for num in range(x):

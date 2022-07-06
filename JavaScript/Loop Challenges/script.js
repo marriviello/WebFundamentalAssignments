@@ -22,20 +22,20 @@ for (i=4; i>-4; i-=1.5){
 console.log("End problem #3");
 
 //4
-var x=0;
+var sum=0;
 
 for(i=0; i<=100; i++){
-    x = x+i; 
+    sum = sum+i; 
 }
 
 console.log(x);
 console.log("End problem #4");
 
 //5
-var y=1;
+var product=1;
 
 for(i=1; i<=12; i++){
-    y = y*i;
+    product = product*i;
 }
 
 console.log(y);

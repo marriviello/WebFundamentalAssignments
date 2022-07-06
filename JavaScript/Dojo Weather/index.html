@@ -14,10 +14,10 @@
     <!--Nav Bar-->
     <header id="navbar">
         <h2>DojoWeather</h2>
-        <div class="cities">
-            <h4 onclick="cityAlert()">Burbank</h4>
-            <h4 onclick="cityAlert()">Chicago</h4>
-            <h4 onclick="cityAlert()">Dallas</h4>
+        <div class="cities" onclick="cityAlert()">
+            <h4>Burbank</h4>
+            <h4>Chicago</h4>
+            <h4>Dallas</h4>
         </div>
     </header>
 
@@ -28,8 +28,8 @@
             <div class="temp-option">
                 <p>show temperature in</p>
                 <select name="temp-select" onchange="changeTemp(this)">
-                    <option id="celcius">&#8451</option>
-                    <option id="fahrenheit">&#8457</option>
+                    <option value="celcius">&#8451</option>
+                    <option value="fahrenheit">&#8457</option>
                 </select>
             </div>
         </div>
@@ -44,7 +44,7 @@
                 <img src="imgs/some_rain.png" alt="rain">
                 <p>some rain</p>
                 <div class="temperature">
-                    <h4 clas="high-temp" id="temp1">24 &#176</h4>
+                    <h4 class="high-temp" id="temp1">24 &#176</h4>
                     <h4 class="low-temp" id="temp2">18 &#176</h4>
                 </div>
             </div>

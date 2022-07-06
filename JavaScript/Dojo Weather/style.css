@@ -78,11 +78,11 @@ img{
     width: 80px;
 }
 
-#high-temp{
+.high-temp{
     color: red;
 }
 
-#low-temp{
+.low-temp{
     color: blue;
 }
 
