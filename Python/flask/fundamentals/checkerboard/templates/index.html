@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table tr td{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <title>Checkerboard</title>
+</head>
+<body>
+    <h1 style="background-color: {{color_two}}; color: {{color_one}}; text-align: center;">**Checkerboard**</h1>
+
+    <table>
+    {% for i in range (0,row): %}
+        <tr>
+            {% for x in range(0,col): %}
+            <td style="background-color: {{color_one}};"></td>
+            <td style="background-color: {{color_two}};"></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for x in range(0,col): %}
+            <td style="background-color: {{color_two}};"></td>
+            <td style="background-color: {{color_one}};"></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
