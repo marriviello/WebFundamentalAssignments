@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Example</title>
+</head>
+<body>
+    <h1>Club Flask</h1>
+
+    <a href="#">Sign-in</a>
+
+    <h2>Members:</h2>
+
+    {% for person in people %}
+        {{person.name}}: <a href="/member/{{person.id}}">View</a>
+    {% endfor %}
+
+</body>
+</html>

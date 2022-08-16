@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+</head>
+<body>
+    <h1>Index Page</h1>
+    <h3>Create a User</h3>
+    <form action='/users' method='post'> <!--Action is the route that processes the form & method is GET or POST default is GET-->
+        <label for='name'>Name:</label>
+        <input type='text' name='name'>
+        <label for='email'>Email:</label>
+        <input type='text' name='email'>
+        <input type='submit' value='create user'> <!--Could also but <button>Submit</button>-->
+    </form>
+</body>
+</html>

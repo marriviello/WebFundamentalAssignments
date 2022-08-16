@@ -1,0 +1,54 @@
+INSERT INTO users (first_name, last_name)
+VALUES  ('Jane', 'Amsden'), ('Emily', 'Dixon'), ('Theodore', 'Dostoevsky'), ('William', 'Shapiro'), ('Lao', 'Xiu');
+
+INSERT INTO books (title, num_pages)
+VALUES ('C Sharp', 200), ('Java', 188), ('Python', 208), ('PHP', 2083), ('Ruby', 203);
+
+UPDATE books
+SET title = 'C#'
+WHERE title = 'C Sharp';
+
+UPDATE users
+SET first_name = 'Bill'
+WHERE id=4;
+
+-- Have the first user like the first 2 books
+INSERT into favorites (users_id, books_id)
+VALUES (1,1), (1,2);
+
+-- Have the second user like the first 3 books
+INSERT into favorites (users_id, books_id)
+VALUES (2,1), (2,2), (2,3);
+
+-- Have the third user like the first 4 books
+INSERT into favorites (users_id, books_id)
+VALUES (3,1), (3,2), (3,3), (3,4);
+
+-- Have the fourth user like all books
+INSERT into favorites (users_id, books_id)
+VALUES (4,2), (4,2), (4,3), (4,4), (4,5);
+
+-- Retrieve all users who favorited the third book
+SELECT users.first_name, users.last_name FROM users
+JOIN favorites ON favorites.users_id=users.id
+JOIN books ON favorites.books_id = books.id
+WHERE books.id=3;
+
+-- DELETE first user of third book's favorites
+DELETE FROM favorites
+WHERE books_id=3 and users_id=1;
+
+-- 5th user favorite the 2nd book
+INSERT INTO favorites (users_id, books_id)
+VALUES (5,2);
+
+-- Find books third user favorited
+SELECT title FROM books
+JOIN favorites ON favorites.books_id=books.id
+WHERE favorites.users_id=3;
+
+-- All users that favorited fifth book
+SELECT users.first_name, users.last_name 
+FROM users
+JOIN favorites ON users.id=favorites.users_id
+WHERE favorites.books_id=5;

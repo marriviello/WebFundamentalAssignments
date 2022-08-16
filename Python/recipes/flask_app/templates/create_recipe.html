@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    #forms{
+        display:flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    #radio-buttons{
+        display: flex;
+        align-items: center;
+    }
+    </style>
+    <title>Create Recipes</title>
+</head>
+<body>
+    <div class="messages">
+        {% with messages = get_flashed_messages() %}
+            {%if messages %}
+                {% for m in messages %}
+                    <h5>{{m}}</h5>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <h1>Add a new recipe!</h1>
+    <a href="/recipes" value="back to recipes"> Back to recipes</a>
+    <a href="/logout" value="logout">Logout</a>
+    <form action="/recipe/create" method="post" id="forms">
+        <label>Name</label>
+            <input type="text" name="name">
+        <label>Description:</label>
+            <input type="text" name="description">
+        <label>Instructions:</label>
+            <input type="text" name="instructions">
+        <label>Date Cooked/Made:</label>
+            <input type="date" name="date_cooked">
+        <div id="radio-buttons">
+            <p>Under 30 min?</p>
+                <label for="yes">Yes</label>
+                    <input type="radio" name="thirty_min" value="1">
+                <label for="no">No</label>
+                    <input type="radio" name="thirty_min" value="0"><br>
+        </div>
+        <input type="submit" value="Create">
+    </form>
+</body>
+</html>

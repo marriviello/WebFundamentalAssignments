@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+</head>
+<body>
+    <h1 style="color: blue;">Welcome {{user.first_name}} {{user.last_name}}</h1>
+    <a href="/recipes/new">+ Create</a>
+    <a href="/logout">Logout</a>
+    <h3>All posted recipes:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Under 30 Min</th>
+                <th>Posted By</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for recipe in recipes %}
+            <tr>
+                <td>{{recipe.name}}</td>
+                <td>{{recipe.description}}</td>
+                <td>
+                    {% if recipe.thirty_min == 1: %}
+                        Yes
+                    {% else: %}
+                        No
+                    {% endif %}
+                </td>
+                <td>{{recipe.user_id.first_name}}</td>
+                <td>
+                    <a href="/recipes/{{recipe.id}}" value="view recipe">View Recipe</a><!--make route for view-->
+                    {% if recipe.user_id == user.id %}
+                    <a href="/recipes/edit/{{recipe.id}}" value="edit">Edit</a> <!--make route for edit-->
+                    <a href="/recipes/delete/{{recipe.id}}" value="delete">Delete</a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

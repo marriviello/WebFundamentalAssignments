@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #forms{
+            display:flex;
+        }
+        #reg_form, #login_form, label{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <title>Login and Register</title>
+</head>
+<body>
+    <div class="messages">
+        {% with messages = get_flashed_messages() %}
+            {%if messages %}
+                {% for m in messages %}
+                    <h5>{{m}}</h5>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <h1 style="color: blue;">Recipe Share</h1>
+
+    <div id="forms">
+    <!--Register Form-->
+        <div id="reg_form">
+        <h2> Register </h2>
+            <form action="/register" method="post">
+                <label>First Name:</label>
+                    <input type="text" name="first_name">
+                <label>Last Name:</label>
+                    <input type="text" name="last_name">
+                <label>Email:</label>
+                    <input type="text" name="email">
+                <label>Password:</label>
+                    <input type="password" name="password">
+                <label>Confirm password:</label>
+                    <input type="password" name="verify_password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+    <!--Login Form-->
+    <div id="login_form">
+        <h2> Login </h2>
+        <form action="/login" method="post"> 
+            <label>Email:</label>
+                <input type="text" name="email">
+            <label>Password:</label>
+                <input type="password" name="password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+</body>
+</html>
